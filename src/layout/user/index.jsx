@@ -6,9 +6,11 @@ import { Outlet } from 'react-router'
 const UserL = () => {
   return (
     <>
-        <Navbar/>
-        <Outlet/>
-        <Footer/>
+      <header className='d-flex'>
+        <Navbar />
+      </header>
+      <Outlet />
+      <Footer />
     </>
   )
 }

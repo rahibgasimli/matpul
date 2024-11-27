@@ -15,8 +15,6 @@ import { productApi } from './services/base'
 
 function App() {
 
-  productApi.getAllProducts();
-
 
   return (
     <>
@@ -26,8 +24,8 @@ function App() {
             <Route element={<Home/>} index/>
             <Route path=":id" element={<Detail/>}/>
             <Route path="search" element={<Search/>}/>
-            <Route path='login' element={<Login/>}/>
             <Route path="contact" element={<Contact/>}/>
+            <Route path='login' element={<Login/>}/>
           </Route>
           <Route path='/admin' element={<AdminLayout/>}>
             <Route element={<Dashboard/>} index/>

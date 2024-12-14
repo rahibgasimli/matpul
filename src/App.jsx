@@ -11,6 +11,8 @@ import Users from './pages/admin/Users'
 import Search from './pages/user/search'
 import Login from './layout/user/Auth/Login'
 import { productApi } from './services/base'
+import Cart from './pages/user/cart'
+import Favorite from './pages/user/favorite'
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
             <Route path=":id" element={<Detail/>}/>
             <Route path="search" element={<Search/>}/>
             <Route path="contact" element={<Contact/>}/>
+            <Route path='cart' element={<Cart/>}/>
+            <Route path='favorite' element={<Favorite/>}/>
             <Route path='login' element={<Login/>}/>
           </Route>
           <Route path='/admin' element={<AdminLayout/>}>

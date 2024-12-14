@@ -1,4 +1,6 @@
 import React from 'react'
+import { CiShoppingCart } from "react-icons/ci";
+import { MdFavorite, MdOutlineFavoriteBorder } from "react-icons/md";
 
 import { Link } from 'react-router-dom'
 
@@ -18,10 +20,16 @@ const Navbar = () => {
             <Link to={"/login"}>Login</Link>
           </li>
         </ul>
-        <form>
-          <input type="search" name="" id="" />
-          <button>Search</button>
-        </form>
+        <div className='d-flex align-items-center'>
+          <form>
+            <input type="search" name="" id="" />
+            <button>Search</button>
+          </form>
+          <div className="basket">
+            <Link to="/cart"><CiShoppingCart /></Link>
+            <Link to="/favorite"><MdOutlineFavoriteBorder/></Link>
+          </div>
+        </div>
       </div>
 
     </div>

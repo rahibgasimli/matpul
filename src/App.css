@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
 
 header{
     background-color: orange;
@@ -49,7 +49,14 @@ header{
         }
     }
 
-
+    .basket{
+        svg{
+            font-size: 30px;
+            margin-left: 15px;
+            cursor: pointer;
+            color: white;
+        }
+    }
 }
 
 main{
@@ -120,6 +127,85 @@ main{
     }
 }
 
+section#contact{
+    
+    .section-heading{
+        padding-block: 3rem;
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+        }
+    }
+    padding-block: 4rem;
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(50, 50, 50, .2);
+        padding-inline: 30px;
+        text-align: center;
+        border-radius: 7px;
+
+        h3{
+            font-size: 30px;
+            color: orange;
+        }
+        .icon{
+            font-size: 40px;
+        }
+        p{
+            color: grey;
+        }
+        a{
+            color: grey;
+            text-decoration: none;
+        }
+    }
+
+    .contact-form{
+        margin-top: 5rem;
+        form{
+            box-shadow: 0 0 10px -1px orange;
+            border-radius: 10px;
+            padding: 30px;
+            input , textarea{
+                width: 100%;
+                padding: 10px;
+                border: none;
+                outline: none;
+                box-shadow: 0 0 5px -1px orange;
+                margin-bottom: 15px;
+            }
+            textarea{
+                height: 100px;
+                resize: vertical;
+            }
+            input[type="submit"]{
+                background-color: violet;
+                color: #fff;
+                &:active{
+                    background-color: blueviolet;
+                }
+            }
+        }
+    }
+}
+
+
 footer{
     background-color:rgb(50, 50, 50,.99) ; 
+}
+
+.notification{
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    background-color: orange;
+    padding: 15px 55px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -1px black;
 }
